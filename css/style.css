@@ -598,7 +598,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-top: 28px;
+  /* margin-top: 28px; */
 }
 
 .hero-social-label {
@@ -1675,4 +1675,53 @@ canvas {
     height: 300px;
     right: -150px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SOCIAL LINKS RESPONSIVE VISIBILITY
+   ========================================= */
+
+/* Desktop */
+.hero-social-desktop {
+    display: flex;
+}
+
+.hero-social-mobile {
+    display: none;
+}
+
+
+/* Tablet + Mobile */
+@media (max-width: 1024px) {
+
+    .hero-social-desktop {
+        display: none !important;
+    }
+
+    .hero-social-mobile {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* margin-top: 30px; */
+        margin-bottom: 30px;
+    }
+
+    .hero-social-mobile .social-icons-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 14px;
+    }
 }

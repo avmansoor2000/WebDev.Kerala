@@ -598,7 +598,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 16px;
-  /* margin-top: 28px; */
+  margin-top: 28px;
 }
 
 .hero-social-label {
@@ -1691,17 +1691,17 @@ canvas {
    ========================================= */
 
 /* Desktop */
-.hero-social-desktop {
+/* .hero-social-desktop {
     display: flex;
 }
 
 .hero-social-mobile {
     display: none;
-}
+} */
 
 
 /* Tablet + Mobile */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 
     .hero-social-desktop {
         display: none !important;
@@ -1713,7 +1713,7 @@ canvas {
         align-items: center;
         justify-content: center;
         width: 100%;
-        /* margin-top: 30px; */
+        margin-top: 30px;
         margin-bottom: 30px;
     }
 
@@ -1724,4 +1724,21 @@ canvas {
         gap: 12px;
         margin-top: 14px;
     }
+} */
+
+
+
+
+
+
+/* Hide Connect label on mobile/tablet */
+.hero-social-label {
+  display: none;
+}
+
+/* Show Connect label on desktop */
+@media (min-width: 992px) {
+  .hero-social-label {
+    display: inline;
+  }
 }
